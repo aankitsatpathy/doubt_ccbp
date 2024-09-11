@@ -1,0 +1,17 @@
+// Import the required functions from date-fns package
+const {format, addDays} = require('date-fns')
+
+// Define the base date
+const baseDate = new Date(2020, 7, 22) // Month is zero-indexed, so 7 is August
+
+// Function to get date after a given number of days from the base date
+function getDateAfterDays(days) {
+  // Add the specified number of days to the base date
+  const newDate = addDays(baseDate, days)
+
+  // Format the new date in 'DD-MM-YYYY' format
+  return format(newDate, 'dd-MM-yyyy')
+}
+
+// Export the function using CommonJS default export syntax
+module.exports = getDateAfterDays
