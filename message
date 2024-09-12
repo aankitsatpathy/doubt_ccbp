@@ -1,0 +1,2 @@
+let result = require('../greeting/index')
+module.exports = result
