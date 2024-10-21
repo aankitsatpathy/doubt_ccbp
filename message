@@ -1,2 +1,2 @@
 let result = require('../greeting/index')
-module.exports = result
+module.exports = 'Hello Rahul! ${result}'
